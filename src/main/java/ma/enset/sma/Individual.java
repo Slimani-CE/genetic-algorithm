@@ -33,9 +33,9 @@ public class Individual implements Comparable{
     public int compareTo(Object o) {
         Individual individual = (Individual) o;
         if(this.fitness > individual.fitness)
-            return -1;
-        else if(this.fitness < individual.fitness)
             return 1;
+        else if(this.fitness < individual.fitness)
+            return -1;
         else
             return 0;
     }
