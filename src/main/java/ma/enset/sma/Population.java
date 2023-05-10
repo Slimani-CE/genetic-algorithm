@@ -1,9 +1,6 @@
 package ma.enset.sma;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Population{
     private List<Individual> individuals = new ArrayList<>();
@@ -32,21 +29,46 @@ public class Population{
         secondFittest = individuals.get(1);
     }
 
-    //
+    // Perform crossover on individuals and add new individuals to the population
     public void crossover(){
         // Generate a random crossover point
         Random random = new Random();
         int crossoverPoint = random.nextInt(individuals.get(0).getGenes().length - 1) + 1;
-    }
 
-    // Get the fittest individual
-    public Individual getFittest(){
-        Individual fittest = individuals.get(0);
-        for(Individual individual: individuals){
-            if(individual.getFitness() > fittest.getFitness())
-                fittest = individual;
+        // Create new individuals to store new individuals
+        Individual individual1 = new Individual();
+        Individual individual2 = new Individual();
+
+        // Swap first half of genes
+        for(int i = 0; i < crossoverPoint; i++){
+            individual1.getGenes()[i] = secondFittest.getGenes()[i];
+            individual2.getGenes()[i] = firstFittest.getGenes()[i];
         }
-        return fittest;
+
+        // Initialize second half of genes
+        for(int i = crossoverPoint; i < individual1.getGenes().length; i++){
+            individual1.getGenes()[i] = firstFittest.getGenes()[i];
+            individual2.getGenes()[i] = secondFittest.getGenes()[i];
+        }
+        // Calculate fitness of new individuals
+        individual1.calculateFitness();
+        individual2.calculateFitness();
+
+        // Add new individuals to the population
+        individuals.add(individual1);
+        individuals.add(individual2);
+
+        // Print the crossover point
+        System.out.println("Crossover Point : " + crossoverPoint);
+        // Print chromosome before crossover
+        System.out.println("Before crossover : ");
+        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
+        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
+        // Print chromosome after crossover
+        System.out.println("After crossover : ");
+        System.out.println("First fittest : " + individual1.getFitness() + " " + Arrays.toString(individual1.getGenes()));
+        System.out.println("Second fittest : " + individual2.getFitness() + " " + Arrays.toString(individual2.getGenes()));
+
     }
 
     public List<Individual> getIndividuals() {

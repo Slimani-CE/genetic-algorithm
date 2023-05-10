@@ -15,6 +15,7 @@ public class Individual implements Comparable{
     }
 
     public void calculateFitness(){
+        fitness = 0;
         for(int gene: genes){
             if(gene == 1)
                 fitness += gene;

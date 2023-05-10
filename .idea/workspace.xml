@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="">
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Create selection method to sort individuals by their fitness">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Individual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Individual.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/Individual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +46,26 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="AGApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.sma.AGApp" />
+      <module name="Genetic_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.enset.sma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AGApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,8 +76,23 @@
       <updated>1682778061284</updated>
       <workItem from="1682778063140" duration="1811000" />
       <workItem from="1682794202306" duration="7000" />
-      <workItem from="1683733516424" duration="5314000" />
+      <workItem from="1683733516424" duration="7799000" />
     </task>
+    <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
+      <created>1683741420340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683741420340</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create selection method to sort individuals by their fitness">
+      <created>1683741430806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683741430806</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create selection method to sort individuals by their fitness" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create selection method to sort individuals by their fitness" />
   </component>
 </project>
