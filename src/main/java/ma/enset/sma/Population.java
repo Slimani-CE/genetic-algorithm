@@ -72,6 +72,29 @@ public class Population{
 
     }
 
+    // Perform mutation on the population
+    public void mutation(){
+        // Generate a random mutation point
+        Random random = new Random();
+        int mutationPoint = random.nextInt(individuals.get(0).getGenes().length);
+
+        // Flip values at the mutation point
+        for(Individual individual: individuals){
+            individual.getGenes()[mutationPoint] = individual.getGenes()[mutationPoint] == 0 ? 1 : 0;
+        }
+
+        // Print the mutation point
+        System.out.println("Mutation Point : " + mutationPoint);
+        // Print chromosome before mutation
+        System.out.println("Before mutation : ");
+        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
+        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
+        // Print chromosome after mutation
+        System.out.println("After mutation : ");
+        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
+        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
+    }
+
     public List<Individual> getIndividuals() {
         return individuals;
     }

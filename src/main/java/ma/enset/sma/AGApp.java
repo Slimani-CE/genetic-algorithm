@@ -18,6 +18,7 @@ public class AGApp {
 
         // Evolve second generation
         population.crossover();
+        population.mutation();
         population.calculateIndFitness();
         population.selection();
 
