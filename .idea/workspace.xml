@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update crossover method">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genetic_Algorithm.iml" afterDir="false" />
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Make mutation method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/sma_tp_security",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="RunManager">
@@ -88,7 +86,7 @@
       <workItem from="1682794202306" duration="7000" />
       <workItem from="1683733516424" duration="9949000" />
       <workItem from="1683835487475" duration="684000" />
-      <workItem from="1683836892340" duration="1902000" />
+      <workItem from="1683836892340" duration="5484000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683844870288</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Make mutation method">
+      <created>1683845829386</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683845829386</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +144,7 @@
     <MESSAGE value="Create selection method to sort individuals by their fitness" />
     <MESSAGE value="Create crossover method" />
     <MESSAGE value="Update crossover method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update crossover method" />
+    <MESSAGE value="Make mutation method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make mutation method" />
   </component>
 </project>

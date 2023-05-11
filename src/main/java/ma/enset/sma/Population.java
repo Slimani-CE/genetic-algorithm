@@ -1,6 +1,7 @@
 package ma.enset.sma;
 
 import java.util.*;
+import java.util.List;
 
 public class Population{
     private List<Individual> individuals = new ArrayList<>();
@@ -34,7 +35,7 @@ public class Population{
         // Generate a random crossover point
         Random random = new Random();
         int crossoverPoint = random.nextInt(individuals.get(0).getGenes().length - 1) + 1;
-
+        System.out.println("Crossover Point : " + crossoverPoint);
         // Create new individuals to store new individuals
         Individual individual1 = new Individual();
         Individual individual2 = new Individual();
@@ -59,40 +60,33 @@ public class Population{
         individuals.add(individual1);
         individuals.add(individual2);
 
-        // Print the crossover point
-        System.out.println("Crossover Point : " + crossoverPoint);
-        // Print chromosome before crossover
-        System.out.println("Before crossover : ");
-        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
-        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
-        // Print chromosome after crossover
-        System.out.println("After crossover : ");
-        System.out.println("First fittest : " + individual1.getFitness() + " " + Arrays.toString(individual1.getGenes()));
-        System.out.println("Second fittest : " + individual2.getFitness() + " " + Arrays.toString(individual2.getGenes()));
+//        // Print the crossover point
+//        System.out.println("Crossover Point : " + crossoverPoint);
+//        // Print chromosome before crossover
+//        System.out.println("Before crossover : ");
+//        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
+//        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
+//        // Print chromosome after crossover
+//        System.out.println("After crossover : ");
+//        System.out.println("First fittest : " + individual1.getFitness() + " " + Arrays.toString(individual1.getGenes()));
+//        System.out.println("Second fittest : " + individual2.getFitness() + " " + Arrays.toString(individual2.getGenes()));
 
     }
 
     // Perform mutation on the population
-    public void mutation(){
-        // Generate a random mutation point
-        Random random = new Random();
-        int mutationPoint = random.nextInt(individuals.get(0).getGenes().length);
+    public void mutation(double mutationRate){
+        // mutationRate is a value between 0 and 1
+        // It represents the probability of performing mutation on an individual
+        for(Individual individual : individuals){
+            if(new Random().nextDouble(1) <= mutationRate){
+                // Generate a random mutation point
+                Random random = new Random();
+                int mutationPoint = random.nextInt(individual.getGenes().length);
 
-        // Flip values at the mutation point
-        for(Individual individual: individuals){
-            individual.getGenes()[mutationPoint] = individual.getGenes()[mutationPoint] == 0 ? 1 : 0;
+                // Flip values at the mutation point
+                individual.getGenes()[mutationPoint] = individual.getGenes()[mutationPoint] == 0 ? 1 : 0;
+            }
         }
-
-        // Print the mutation point
-        System.out.println("Mutation Point : " + mutationPoint);
-        // Print chromosome before mutation
-        System.out.println("Before mutation : ");
-        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
-        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
-        // Print chromosome after mutation
-        System.out.println("After mutation : ");
-        System.out.println("First fittest : " + firstFittest.getFitness() + " " + Arrays.toString(firstFittest.getGenes()));
-        System.out.println("Second fittest : " + secondFittest.getFitness() + " " + Arrays.toString(secondFittest.getGenes()));
     }
 
     public List<Individual> getIndividuals() {
@@ -107,7 +101,5 @@ public class Population{
         return secondFittest;
     }
 
-    public int getPolulationSize(){
-        return individuals.size();
-    }
+
 }
