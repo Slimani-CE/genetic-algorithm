@@ -9,9 +9,9 @@ public class Population{
 
 
     // Create a population
-    public Population(int populationSize){
+    public Population(int populationInitSize){
         // Initialize population
-        for(int i = 0; i < populationSize; i++){
+        for(int i = 0; i < populationInitSize; i++){
            individuals.add(new Individual());
         }
     }
@@ -55,6 +55,7 @@ public class Population{
         individual2.calculateFitness();
 
         // Add new individuals to the population
+        // TODO: 10/05/2023 Make population size static by changing old individuals with new ones
         individuals.add(individual1);
         individuals.add(individual2);
 
@@ -81,5 +82,9 @@ public class Population{
 
     public Individual getSecondFittest() {
         return secondFittest;
+    }
+
+    public int getPolulationSize(){
+        return individuals.size();
     }
 }

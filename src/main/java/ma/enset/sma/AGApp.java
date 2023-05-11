@@ -11,6 +11,7 @@ public class AGApp {
 
         // First generation
         System.out.println("First generation ....................................................");
+        System.out.println("Population size : " + population.getIndividuals().size());
         for (Individual individual : population.getIndividuals()){
             System.out.println("Chromosome : " + Arrays.toString(individual.getGenes()) + " Fitness : " + individual.getFitness());
         }
@@ -21,6 +22,7 @@ public class AGApp {
         population.selection();
 
         // Second generation
+        System.out.println("Population size : " + population.getIndividuals().size());
         System.out.println("Second generation ....................................................");
         for (Individual individual : population.getIndividuals()){
             System.out.println("Chromosome : " + Arrays.toString(individual.getGenes()) + " Fitness : " + individual.getFitness());
