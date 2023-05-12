@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Make mutation method">
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update mutation method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" afterDir="false" />
@@ -86,7 +86,7 @@
       <workItem from="1682794202306" duration="7000" />
       <workItem from="1683733516424" duration="9949000" />
       <workItem from="1683835487475" duration="684000" />
-      <workItem from="1683836892340" duration="5484000" />
+      <workItem from="1683836892340" duration="8411000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683845829386</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update mutation method">
+      <created>1683849340484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683849340484</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +152,7 @@
     <MESSAGE value="Create crossover method" />
     <MESSAGE value="Update crossover method" />
     <MESSAGE value="Make mutation method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make mutation method" />
+    <MESSAGE value="Update mutation method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update mutation method" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class AGApp {
     private static final int MAX_GENERATIONS = 50;
     private static final int POPULATION_SIZE = 10;
+    private static final int FITNESS_THRESHOLD = 10;
     public static void main(String[] args) {
         // Create an initial population
         Population population = new Population(POPULATION_SIZE);
@@ -13,7 +14,7 @@ public class AGApp {
 
         // Perform evolution
         System.out.println("Evolution in progress...");
-        for (int i = 0; i < MAX_GENERATIONS; i++) {
+        for (int i = 0; i < MAX_GENERATIONS && population.getFirstFittest().getFitness() < FITNESS_THRESHOLD; i++) {
             population.crossover();
             population.mutation(0.5);
             population.calculateIndFitness();
