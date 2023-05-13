@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update mutation method">
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Add new approach for mutation.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jade.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/GAPopulationAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/IndividualAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genetic_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Genetic_Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/AGApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Individual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/Population.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +58,39 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/sma_tp_security",
+    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/Made by teacher",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.39425287",
     "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\Genetic_Algorithm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test">
     <configuration name="AGApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.sma.AGApp" />
+      <option name="MAIN_CLASS_NAME" value="ma.enset.sma.sequential.AGApp" />
       <module name="Genetic_Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ma.enset.sma.*" />
+          <option name="PATTERN" value="ma.enset.sma.sequential.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.sma.sequential.Test" />
+      <module name="Genetic_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.enset.sma.sequential.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.AGApp" />
       </list>
     </recent_temporary>
@@ -86,7 +117,7 @@
       <workItem from="1682794202306" duration="7000" />
       <workItem from="1683733516424" duration="9949000" />
       <workItem from="1683835487475" duration="684000" />
-      <workItem from="1683836892340" duration="8411000" />
+      <workItem from="1683836892340" duration="16973000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -130,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683849340484</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update mutation method">
+      <created>1683912773155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683912773156</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +191,7 @@
     <MESSAGE value="Update crossover method" />
     <MESSAGE value="Make mutation method" />
     <MESSAGE value="Update mutation method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update mutation method" />
+    <MESSAGE value="Add new approach for mutation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new approach for mutation." />
   </component>
 </project>

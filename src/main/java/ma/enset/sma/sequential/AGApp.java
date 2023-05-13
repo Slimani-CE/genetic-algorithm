@@ -1,6 +1,4 @@
-package ma.enset.sma;
-
-import java.util.Arrays;
+package ma.enset.sma.sequential;
 
 public class AGApp {
     private static final int MAX_GENERATIONS = 50;
@@ -15,15 +13,15 @@ public class AGApp {
         // Perform evolution
         System.out.println("Evolution in progress...");
         for (int i = 0; i < MAX_GENERATIONS && population.getFirstFittest().getFitness() < FITNESS_THRESHOLD; i++) {
-            population.crossover();
-            population.mutation(0.5);
-            population.calculateIndFitness();
             population.selection();
+            population.crossover();
+            population.mutation(0.5, Population.SWAP);
+            population.calculateIndFitness();
             // Display fitness of the fittest individual
-            System.out.println("Generation: " + (i + 1) + " (Fittest: " + population.getFirstFittest().getFitness() + ") Chromosome: " + Arrays.toString(population.getFirstFittest().getGenes()));
+            System.out.println("Generation: " + (i + 1) + " (Fittest: " + population.getFirstFittest().getFitness() + ") Chromosome: " + population.getFirstFittest().getGenes().toString());
         }
 
         // Get first fittest individual
-        System.out.println("First fittest individual (Fitness: " + population.getFirstFittest().getFitness() + "): " + Arrays.toString(population.getFirstFittest().getGenes()));
+        System.out.println("First fittest individual (Fitness: " + population.getFirstFittest().getFitness() + "): " + population.getFirstFittest().getGenes().toString());
     }
 }

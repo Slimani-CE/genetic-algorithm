@@ -1,4 +1,4 @@
-package ma.enset.sma;
+package ma.enset.sma.sequential;
 
 import java.util.*;
 import java.util.List;
@@ -7,7 +7,12 @@ public class Population{
     private List<Individual> individuals = new ArrayList<>();
     private Individual firstFittest;
     private Individual secondFittest;
+    private String target = "hello";
 
+    // Population final attributes
+    public static final int INSERTION = 0;
+    public static final int SWAP = 1;
+    public static final int INVERSION = 2;
 
     // Create a population
     public Population(int populationInitSize){
@@ -20,7 +25,7 @@ public class Population{
     // Calculate individuals fitness
     public void calculateIndFitness(){
         for(Individual individual: individuals){
-            individual.calculateFitness();
+            individual.calculateFitness(target);
         }
     }
 
@@ -34,25 +39,25 @@ public class Population{
     public void crossover(){
         // Generate a random crossover point
         Random random = new Random();
-        int crossoverPoint = random.nextInt(individuals.get(0).getGenes().length - 1) + 1;
+        int crossoverPoint = random.nextInt(individuals.get(0).getGenes().size() - 1) + 1;
         // Create new individuals to store new individuals
         Individual individual1 = new Individual();
         Individual individual2 = new Individual();
 
         // Swap first half of genes
         for(int i = 0; i < crossoverPoint; i++){
-            individual1.getGenes()[i] = secondFittest.getGenes()[i];
-            individual2.getGenes()[i] = firstFittest.getGenes()[i];
+            individual1.getGenes().add(i, secondFittest.getGenes().get(i));
+            individual2.getGenes().add(i, firstFittest.getGenes().get(i));
         }
 
         // Initialize second half of genes
-        for(int i = crossoverPoint; i < individual1.getGenes().length; i++){
-            individual1.getGenes()[i] = firstFittest.getGenes()[i];
-            individual2.getGenes()[i] = secondFittest.getGenes()[i];
+        for(int i = crossoverPoint; i < individual1.getGenes().size(); i++){
+            individual1.getGenes().add(i, firstFittest.getGenes().get(i));
+            individual2.getGenes().add(i, secondFittest.getGenes().get(i));
         }
         // Calculate fitness of new individuals
-        individual1.calculateFitness();
-        individual2.calculateFitness();
+        individual1.calculateFitness(target);
+        individual2.calculateFitness(target);
 
         // Add new individuals to the population
         // TODO: 10/05/2023 Make population size static by changing old individuals with new ones
@@ -62,17 +67,25 @@ public class Population{
     }
 
     // Perform mutation on the population
-    public void mutation(double mutationRate){
+    public void mutation(double mutationRate, int mutationType){
         // mutationRate is a value between 0 and 1
         // It represents the probability of performing mutation on an individual
         for(Individual individual : individuals){
+            // Check if mutation should be performed
             if(new Random().nextDouble(1) <= mutationRate){
-                // Generate a random mutation point
-                Random random = new Random();
-                int mutationPoint = random.nextInt(individual.getGenes().length);
-
-                // Flip values at the mutation point
-                individual.getGenes()[mutationPoint] = individual.getGenes()[mutationPoint] == 0 ? 1 : 0;
+                switch(mutationType){
+                    case Population.INSERTION:
+                        individual.insertionMutation();
+                        break;
+                    case Population.SWAP:
+                        individual.swapMutation();
+                        break;
+                    case Population.INVERSION:
+                        individual.inversionMutation();
+                        break;
+                    default:
+                        System.out.println("Invalid mutation type");
+                }
             }
         }
     }
