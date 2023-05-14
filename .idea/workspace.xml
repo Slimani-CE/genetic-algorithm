@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Build swap mutation method, and MVP test.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" afterDir="false" />
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Introduce the inversion mutation approach">
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Individual.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Individual.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Population.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +104,7 @@
       <workItem from="1682794202306" duration="7000" />
       <workItem from="1683733516424" duration="9949000" />
       <workItem from="1683835487475" duration="684000" />
-      <workItem from="1683836892340" duration="21962000" />
+      <workItem from="1683836892340" duration="22282000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -174,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684023534954</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Introduce the inversion mutation approach">
+      <created>1684024253375</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684024253375</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +201,7 @@
     <MESSAGE value="Update mutation method" />
     <MESSAGE value="Add new approach for mutation." />
     <MESSAGE value="Build swap mutation method, and MVP test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Build swap mutation method, and MVP test." />
+    <MESSAGE value="Introduce the inversion mutation approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduce the inversion mutation approach" />
   </component>
 </project>

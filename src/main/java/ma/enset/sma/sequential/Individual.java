@@ -51,7 +51,15 @@ public class Individual implements Comparable{
     }
 
     public Individual insertionMutation() {
-        // TODO: 13/05/2023 Implement insertion mutation
+        int firstIndex = new Random().nextInt(genes.size());
+        int secondIndex = new Random().nextInt(genes.size());
+
+        Individual newIndividual = new Individual(genes.size());
+        newIndividual.genes = new ArrayList<>(genes);
+        char temp = newIndividual.genes.get(secondIndex);
+        newIndividual.genes.remove(secondIndex);
+        newIndividual.genes.add(firstIndex, temp);
+
         return new Individual(genes.size());
     }
 
@@ -87,6 +95,6 @@ public class Individual implements Comparable{
         newIndividual.genes.subList(firstIndex, secondIndex).clear();
         newIndividual.genes.addAll(firstIndex, subList);
 
-        return new Individual(genes.size());
+        return newIndividual;
     }
 }
