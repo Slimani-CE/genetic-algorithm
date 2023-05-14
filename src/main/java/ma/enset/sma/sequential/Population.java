@@ -4,10 +4,11 @@ import java.util.*;
 import java.util.List;
 
 public class Population{
+    private final int populationInitSize;
     private List<Individual> individuals = new ArrayList<>();
     private Individual firstFittest;
     private Individual secondFittest;
-    private String target = "hello";
+    private String target;
 
     // Population final attributes
     public static final int INSERTION = 0;
@@ -15,10 +16,12 @@ public class Population{
     public static final int INVERSION = 2;
 
     // Create a population
-    public Population(int populationInitSize){
+    public Population(int populationInitSize, String target){
+        this.populationInitSize = populationInitSize;
+        this.target = target;
         // Initialize population
         for(int i = 0; i < populationInitSize; i++){
-           individuals.add(new Individual());
+           individuals.add(new Individual(target.length()));
         }
     }
 
@@ -30,7 +33,9 @@ public class Population{
     }
 
     public void selection(){
-        Collections.sort(individuals, Collections.reverseOrder());
+        Collections.sort(individuals);
+        // Keep MAXIMUM_FITTEST individuals
+        individuals = individuals.subList(0, populationInitSize);
         firstFittest = individuals.get(0);
         secondFittest = individuals.get(1);
     }
@@ -39,21 +44,21 @@ public class Population{
     public void crossover(){
         // Generate a random crossover point
         Random random = new Random();
-        int crossoverPoint = random.nextInt(individuals.get(0).getGenes().size() - 1) + 1;
+        int crossoverPoint = random.nextInt(individuals.get(0).getGenes().size());
         // Create new individuals to store new individuals
-        Individual individual1 = new Individual();
-        Individual individual2 = new Individual();
-
+        Individual individual1 = new Individual(target.length());
+        Individual individual2 = new Individual(target.length());
+        System.out.println("Crossover point: " + crossoverPoint);
         // Swap first half of genes
-        for(int i = 0; i < crossoverPoint; i++){
-            individual1.getGenes().add(i, secondFittest.getGenes().get(i));
-            individual2.getGenes().add(i, firstFittest.getGenes().get(i));
+        for(int i = 0; i <= crossoverPoint; i++){
+            individual1.getGenes().set(i, secondFittest.getGenes().get(i));
+            individual2.getGenes().set(i, firstFittest.getGenes().get(i));
         }
 
         // Initialize second half of genes
-        for(int i = crossoverPoint; i < individual1.getGenes().size(); i++){
-            individual1.getGenes().add(i, firstFittest.getGenes().get(i));
-            individual2.getGenes().add(i, secondFittest.getGenes().get(i));
+        for(int i = crossoverPoint + 1; i < individual1.getGenes().size(); i++){
+            individual1.getGenes().set(i, firstFittest.getGenes().get(i));
+            individual2.getGenes().set(i, secondFittest.getGenes().get(i));
         }
         // Calculate fitness of new individuals
         individual1.calculateFitness(target);
@@ -70,24 +75,26 @@ public class Population{
     public void mutation(double mutationRate, int mutationType){
         // mutationRate is a value between 0 and 1
         // It represents the probability of performing mutation on an individual
+        ArrayList<Individual> newIndividuals = new ArrayList<>();
         for(Individual individual : individuals){
             // Check if mutation should be performed
             if(new Random().nextDouble(1) <= mutationRate){
                 switch(mutationType){
                     case Population.INSERTION:
-                        individual.insertionMutation();
+                        newIndividuals.add(individual.insertionMutation());
                         break;
                     case Population.SWAP:
-                        individual.swapMutation();
+                        newIndividuals.add(individual.swapMutation());
                         break;
                     case Population.INVERSION:
-                        individual.inversionMutation();
+                        newIndividuals.add(individual.inversionMutation());
                         break;
                     default:
                         System.out.println("Invalid mutation type");
                 }
             }
         }
+        individuals.addAll(newIndividuals);
     }
 
     public List<Individual> getIndividuals() {
@@ -101,6 +108,4 @@ public class Population{
     public Individual getSecondFittest() {
         return secondFittest;
     }
-
-
 }
