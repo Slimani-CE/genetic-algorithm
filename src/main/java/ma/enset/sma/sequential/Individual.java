@@ -1,6 +1,8 @@
 package ma.enset.sma.sequential;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -65,7 +67,26 @@ public class Individual implements Comparable{
     }
 
     public Individual inversionMutation() {
-        // TODO: 13/05/2023 Implement inversion mutation
+        // Generate two random indices
+        int firstIndex = new Random().nextInt(genes.size());
+        int secondIndex = new Random().nextInt(genes.size());
+
+        // Create a new individual and copy the genes
+        Individual newIndividual = new Individual(genes.size());
+        newIndividual.genes = new ArrayList<>(genes);
+
+        if(firstIndex > secondIndex){
+            int temp = firstIndex;
+            firstIndex = secondIndex;
+            secondIndex = temp;
+        }
+
+        // Reverse the genes between the two indices
+        ArrayList<Character> subList = new ArrayList<>(newIndividual.genes.subList(firstIndex, secondIndex));
+        Collections.reverse(subList);
+        newIndividual.genes.subList(firstIndex, secondIndex).clear();
+        newIndividual.genes.addAll(firstIndex, subList);
+
         return new Individual(genes.size());
     }
 }
