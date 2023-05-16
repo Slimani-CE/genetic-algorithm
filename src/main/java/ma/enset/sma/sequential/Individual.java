@@ -8,6 +8,7 @@ import java.util.Random;
 public class Individual implements Comparable{
     // Chromosome
     private List<Character> genes = new ArrayList<>();
+    // Fitness score
     private double fitness;
     private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/.,;:!?(){}[]<>@#$%^&*+-=0123456789\n\t\\\"',_`~|<>&";
     public Individual(int chromosomeLength){
@@ -18,9 +19,9 @@ public class Individual implements Comparable{
     }
 
     public void calculateFitness(String target){
-        // Fitness is the mean of the absolute difference of the distance
-        // between each two characters of the target and the genes
+        // Initialize fitness to chromosome length
         fitness = genes.size();
+
         for(int i = 0; i < genes.size(); i++)
             if(genes.get(i).equals(target.charAt(i)))
                 fitness -= 1;

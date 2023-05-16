@@ -36,7 +36,8 @@ public class Population{
 
     public void selection(){
         Collections.sort(individuals);
-        // Keep MAXIMUM_FITTEST individuals
+        // Keep populationSize fittest individuals
+
         individuals = individuals.subList(0, populationInitSize);
         firstFittest = individuals.get(0);
         secondFittest = individuals.get(1);

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Fix calculateFitness bug">
-      <change afterPath="$PROJECT_DIR$/assets/ga-image.png" afterDir="false" />
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update README.md">
+      <change afterPath="$PROJECT_DIR$/assets/crossover-image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Population.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,7 @@
       <workItem from="1683733516424" duration="9949000" />
       <workItem from="1683835487475" duration="684000" />
       <workItem from="1683836892340" duration="24313000" />
-      <workItem from="1684251336681" duration="9122000" />
+      <workItem from="1684251336681" duration="12231000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684264626434</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update README.md">
+      <created>1684266753403</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684266753403</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +252,7 @@
     <MESSAGE value="Fix inversion mutation return problem" />
     <MESSAGE value="Update the insertionMutation method" />
     <MESSAGE value="Fix calculateFitness bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix calculateFitness bug" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
 </project>
