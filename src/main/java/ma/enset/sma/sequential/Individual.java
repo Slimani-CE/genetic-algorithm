@@ -9,7 +9,7 @@ public class Individual implements Comparable{
     // Chromosome
     private List<Character> genes = new ArrayList<>();
     private double fitness;
-    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/.,';[]\\=-0987654321`}{\":?><+_~";
+    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/.,;:!?(){}[]<>@#$%^&*+-=0123456789\n\t\\\"',_`~|<>&";
     public Individual(int chromosomeLength){
         for(int i = 0; i < chromosomeLength; i++){
             // Initialize genes with random values
@@ -20,11 +20,10 @@ public class Individual implements Comparable{
     public void calculateFitness(String target){
         // Fitness is the mean of the absolute difference of the distance
         // between each two characters of the target and the genes
-        fitness = 0;
-        for(int i = 0; i < genes.size(); i++){
+        fitness = genes.size();
+        for(int i = 0; i < genes.size(); i++)
             if(genes.get(i).equals(target.charAt(i)))
-                fitness++;
-        }
+                fitness -= 1;
     }
 
     public double getFitness() {

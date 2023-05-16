@@ -3,7 +3,7 @@ package ma.enset.sma.sequential;
 public class AGApp {
     private static final int MAX_GENERATIONS = 5000;
     private static final int POPULATION_SIZE = 100;
-    private static final String TARGET = "mustaphaslimani";
+    private static final String TARGET = "mustaphaslimani jklwqjeioq i3209uqp2-";
     public static void main(String[] args) {
         // Create an initial population
         Population population = new Population(POPULATION_SIZE, TARGET);
@@ -15,7 +15,7 @@ public class AGApp {
         for (int i = 0; i < MAX_GENERATIONS && population.getFirstFittest().getFitness() != 0; i++) {
             population.selection();
             population.crossover();
-            population.mutation(0.5, Population.RANDOM_MUTATION);
+            population.mutation(0.5, Population.INSERTION_MUTATION);
             population.calculateIndFitness();
             // Display fitness of the fittest individual
             System.out.println("Generation: " + (i + 1) + " (Fittest: " + population.getFirstFittest().getFitness() + ") Chromosome: " + population.getFirstFittest().getGenes().toString());
