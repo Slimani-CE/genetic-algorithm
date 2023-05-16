@@ -14,8 +14,7 @@ public class Population{
     public static final int INSERTION_MUTATION = 0;
     public static final int SWAP_MUTATION = 1;
     public static final int INVERSION_MUTATION = 2;
-    public static final int SCRAMBLE_MUTATION = 3;
-    public static final int RANDOM_MUTATION = 4;
+    public static final int RANDOM_MUTATION = 3;
 
     // Create a population
     public Population(int populationInitSize, String target){
@@ -93,9 +92,6 @@ public class Population{
                         break;
                     case Population.INVERSION_MUTATION:
                         newIndividuals.add(individual.inversionMutation());
-                        break;
-                    case Population.SCRAMBLE_MUTATION:
-                        newIndividuals.add(individual.scrambleMutation(target));
                         break;
                     default:
                         System.out.println("Invalid mutation type");

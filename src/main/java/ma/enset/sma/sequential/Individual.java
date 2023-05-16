@@ -101,15 +101,6 @@ public class Individual implements Comparable{
         return newIndividual;
     }
 
-    public Individual scrambleMutation(String target) {
-        Individual newIndividual = new Individual(genes.size());
-        newIndividual.genes = new ArrayList<>(genes);
-        for(int i = 0; i < genes.size(); i++)
-            if(genes.get(i).equals(target.charAt(i)))
-                newIndividual.genes.set(i, (char)(new Random().nextInt(26) + 'a'));
-        return newIndividual;
-    }
-
     @Override
     public String toString() {
         return "Individual{" +
