@@ -1,13 +1,16 @@
 package ma.enset.sma.sequential;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
     public static void main(String[] args) {
-        Population population = new Population(10, "a");
-        Individual individual = population.getIndividuals().get(0);
+        Individual individual = new Individual(5);
 
-        System.out.println("Before crossover: " + individual.getGenes().toString());
-        population.crossover();
-        System.out.println("After crossover: " + individual.getGenes().toString());
+        System.out.println("BEFORE MUTATION .....");
+        System.out.println(individual);
+        System.out.println("AFTER MUTATION ......");
+        System.out.println(individual.insertionMutation());
 
     }
 }

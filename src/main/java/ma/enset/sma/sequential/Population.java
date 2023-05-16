@@ -11,9 +11,11 @@ public class Population{
     private String target;
 
     // Population final attributes
-    public static final int INSERTION = 0;
-    public static final int SWAP = 1;
-    public static final int INVERSION = 2;
+    public static final int INSERTION_MUTATION = 0;
+    public static final int SWAP_MUTATION = 1;
+    public static final int INVERSION_MUTATION = 2;
+    public static final int SCRAMBLE_MUTATION = 3;
+    public static final int RANDOM_MUTATION = 4;
 
     // Create a population
     public Population(int populationInitSize, String target){
@@ -65,7 +67,6 @@ public class Population{
         individual2.calculateFitness(target);
 
         // Add new individuals to the population
-        // TODO: 10/05/2023 Make population size static by changing old individuals with new ones
         individuals.add(individual1);
         individuals.add(individual2);
 
@@ -76,18 +77,24 @@ public class Population{
         // mutationRate is a value between 0 and 1
         // It represents the probability of performing mutation on an individual
         ArrayList<Individual> newIndividuals = new ArrayList<>();
-        for(Individual individual : individuals){
-            // Check if mutation should be performed
-            if(new Random().nextDouble(1) <= mutationRate){
-                switch(mutationType){
-                    case Population.INSERTION:
+        if(new Random().nextDouble(1) <= mutationRate){
+            for(Individual individual : individuals) {
+                // Check if mutation should be performed
+                if (mutationType == Population.RANDOM_MUTATION)
+                    mutationType = new Random().nextInt(Population.RANDOM_MUTATION);
+
+                switch (mutationType) {
+                    case Population.INSERTION_MUTATION:
                         newIndividuals.add(individual.insertionMutation());
                         break;
-                    case Population.SWAP:
+                    case Population.SWAP_MUTATION:
                         newIndividuals.add(individual.swapMutation());
                         break;
-                    case Population.INVERSION:
+                    case Population.INVERSION_MUTATION:
                         newIndividuals.add(individual.inversionMutation());
+                        break;
+                    case Population.SCRAMBLE_MUTATION:
+                        newIndividuals.add(individual.scrambleMutation(target));
                         break;
                     default:
                         System.out.println("Invalid mutation type");

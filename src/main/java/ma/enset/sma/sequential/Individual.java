@@ -1,6 +1,5 @@
 package ma.enset.sma.sequential;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +9,7 @@ public class Individual implements Comparable{
     // Chromosome
     private List<Character> genes = new ArrayList<>();
     private double fitness;
-
+    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/.,';[]\\=-0987654321`}{\":?><+_~";
     public Individual(int chromosomeLength){
         for(int i = 0; i < chromosomeLength; i++){
             // Initialize genes with random values
@@ -23,12 +22,9 @@ public class Individual implements Comparable{
         // between each two characters of the target and the genes
         fitness = 0;
         for(int i = 0; i < genes.size(); i++){
-            int diff = Math.abs(target.charAt(i) - genes.get(i));
-            if(diff > 13)
-                diff = 26 - diff;
-            fitness += diff;
+            if(genes.get(i).equals(target.charAt(i)))
+                fitness++;
         }
-        fitness /= target.length();
     }
 
     public double getFitness() {
@@ -37,6 +33,10 @@ public class Individual implements Comparable{
 
     public List<Character> getGenes() {
         return genes;
+    }
+
+    public void setGenes(List<Character> genes) {
+        this.genes = genes;
     }
 
     @Override
@@ -51,16 +51,19 @@ public class Individual implements Comparable{
     }
 
     public Individual insertionMutation() {
-        int firstIndex = new Random().nextInt(genes.size());
-        int secondIndex = new Random().nextInt(genes.size());
+        Random random = new Random();
 
+        int nbrGenesInserted = random.nextInt(genes.size());
+        nbrGenesInserted = 1;
         Individual newIndividual = new Individual(genes.size());
-        newIndividual.genes = new ArrayList<>(genes);
-        char temp = newIndividual.genes.get(secondIndex);
-        newIndividual.genes.remove(secondIndex);
-        newIndividual.genes.add(firstIndex, temp);
+        newIndividual.setGenes(new ArrayList<>(genes));
 
-        return new Individual(genes.size());
+        random.ints(nbrGenesInserted, 0, newIndividual.genes.size()).forEach(index -> {
+            char gnome = CHARACTERS.charAt(random.nextInt(CHARACTERS.length()));
+            newIndividual.genes.set(index, gnome);
+        });
+
+        return newIndividual;
     }
 
     public Individual swapMutation() {
@@ -96,5 +99,22 @@ public class Individual implements Comparable{
         newIndividual.genes.addAll(firstIndex, subList);
 
         return newIndividual;
+    }
+
+    public Individual scrambleMutation(String target) {
+        Individual newIndividual = new Individual(genes.size());
+        newIndividual.genes = new ArrayList<>(genes);
+        for(int i = 0; i < genes.size(); i++)
+            if(genes.get(i).equals(target.charAt(i)))
+                newIndividual.genes.set(i, (char)(new Random().nextInt(26) + 'a'));
+        return newIndividual;
+    }
+
+    @Override
+    public String toString() {
+        return "Individual{" +
+                "genes=" + genes +
+                ", fitness=" + fitness +
+                '}';
     }
 }
