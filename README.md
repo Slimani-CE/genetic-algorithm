@@ -113,9 +113,8 @@ public void mutation(double mutationRate, int mutationType){
     ArrayList<Individual> newIndividuals = new ArrayList<>();
     if(new Random().nextDouble(1) <= mutationRate){
         for(Individual individual : individuals) {
-            // Check if mutation should be performed
             if (mutationType == Population.RANDOM_MUTATION)
-            mutationType = new Random().nextInt(Population.RANDOM_MUTATION);
+                mutationType = new Random().nextInt(Population.RANDOM_MUTATION);
         
             switch (mutationType) {
                 case Population.INSERTION_MUTATION:
