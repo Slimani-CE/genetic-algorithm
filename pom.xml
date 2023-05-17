@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.mustaphaslimani.geneticalgorithmgui/com.mustaphaslimani.geneticalgorithmgui.HelloApplication
+                                com.mustaphaslimani.geneticalgorithmgui/com.mustaphaslimani.geneticalgorithmgui.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -6,6 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Genetic_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Genetic_Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAPopulationAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAPopulationAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/Individual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/Population.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/SimpleDemoGA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Population.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/GAPopulationAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/IndividualAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mustaphaslimani/geneticalgorithmgui/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/Individual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/Population.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/SimpleDemoGA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Individual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Population.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/GAPopulationAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,33 +65,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/Made by teacher&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.39425287&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/genetic-algorithm/jade.jar",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39425287",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\Genetic_Algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AGApp">
+  <component name="RunManager" selected="Application.MainApplication">
     <configuration name="AGApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ma.enset.sma.sequential.AGApp" />
       <module name="Genetic_Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ma.enset.sma.sequential.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mustaphaslimani.geneticalgorithmgui.MainApplication" />
+      <module name="Genetic_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mustaphaslimani.geneticalgorithmgui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApplication" />
         <item itemvalue="Application.AGApp" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.SimpleDemoGA" />
@@ -120,6 +161,7 @@
       <workItem from="1683835487475" duration="684000" />
       <workItem from="1683836892340" duration="24313000" />
       <workItem from="1684251336681" duration="14966000" />
+      <workItem from="1684285453795" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
