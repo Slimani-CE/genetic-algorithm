@@ -20,6 +20,8 @@ public class MainController implements Initializable {
     @FXML
     TextField solutonTextField;
     @FXML
+    Label msgField;
+    @FXML
     TextField populationSizeField;
     @FXML
     Slider mutationRateSlider;
@@ -56,6 +58,10 @@ public class MainController implements Initializable {
                 int i = 0;
                 @Override
                 public void run() {
+                    Platform.runLater(() -> {
+                        msgField.setText("Generation: " + (i + 1) + " (Fittest: " + population.getFirstFittest().getFitness() + ")");
+                        msgField.setTextFill(javafx.scene.paint.Color.web("#000000"));
+                    });
                     setSolution(population.getFirstFittest().getGenes().toString());
                     population.calculateIndFitness();
                     population.selection();
@@ -70,41 +76,19 @@ public class MainController implements Initializable {
                         // Get first fittest individual
                         System.out.println("First fittest individual (Fitness: " + population.getFirstFittest().getFitness() + "): " + population.getFirstFittest().getGenes().toString());
                         setSolution(population.getFirstFittest().getGenes().toString());
+                        msgField.setText("Done!");
+                        msgField.setStyle("-fx-text-fill: green");
                     }
                 }
             };
-            timer.schedule(task, 0, 50);
+            timer.schedule(task, 0, 1);
 
         });
     }
 
-    public void startGA(String target, int maxGen) {
-        // Create an initial population
-        Population population = new Population(1000, target);
-        population.calculateIndFitness();
-        population.selection();
 
-        // Perform evolution
-        System.out.println("Evolution in progress...");
-        for (int i = 0; i < maxGen && population.getFirstFittest().getFitness() != 0; i++) {
-            setSolution(population.getFirstFittest().getGenes().toString());
-            population.calculateIndFitness();
-            population.selection();
-            population.crossover();
-            population.mutation(0.5, Population.INSERTION_MUTATION);
-            // Display fitness of the fittest individual
-            System.out.println("Generation: " + (i + 1) + " (Fittest: " + population.getFirstFittest().getFitness() + ") Chromosome: " + population.getFirstFittest().getGenes().toString());
-        }
-
-        // Get first fittest individual
-        System.out.println("First fittest individual (Fitness: " + population.getFirstFittest().getFitness() + "): " + population.getFirstFittest().getGenes().toString());
-        setSolution(population.getFirstFittest().getGenes().toString());
-    }
 
     public void setSolution(String solution) {
-//        Platform.runLater(() -> {
-            // Print solution and wait 1 second
-            solutonTextField.setText(solution);
-//        });
+        solutonTextField.setText(solution);
     }
 }

@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update README.md">
+      <change afterPath="$PROJECT_DIR$/assets/My Video.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genetic_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Genetic_Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAPopulationAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAPopulationAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/Individual.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/Population.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/demo/SimpleDemoGA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/AGApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Individual.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Population.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sequential/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/GAPopulationAgent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/sma/sma/IndividualAgent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mustaphaslimani/geneticalgorithmgui/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mustaphaslimani/geneticalgorithmgui/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/Individual.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/Population.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/demo/SimpleDemoGA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/AGApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Individual.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Population.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sequential/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/GAPopulationAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ma/enset/sma/sma/IndividualAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,12 +36,15 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2P6WYkcYINpKv2ZAiI02FMgYNt6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/genetic-algorithm/jade.jar",
+    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/genetic-algorithm-gui/assets",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -82,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\genetic-algorithm-gui\assets" />
       <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\Genetic_Algorithm" />
     </key>
   </component>
@@ -137,6 +122,133 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Genetic_Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Genetic_Algorithm" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Genetic_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
