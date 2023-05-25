@@ -93,4 +93,15 @@
          </children>
       </HBox>
    </top>
+   <bottom>
+      <VBox alignment="BASELINE_CENTER" prefHeight="113.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="msgField" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
 </BorderPane>

@@ -76,12 +76,14 @@ public class MainController implements Initializable {
                         // Get first fittest individual
                         System.out.println("First fittest individual (Fitness: " + population.getFirstFittest().getFitness() + "): " + population.getFirstFittest().getGenes().toString());
                         setSolution(population.getFirstFittest().getGenes().toString());
-                        msgField.setText("Done!");
-                        msgField.setStyle("-fx-text-fill: green");
+                        Platform.runLater(() -> {
+                            msgField.setText("Done!");
+                            msgField.setStyle("-fx-text-fill: green");
+                        });
                     }
                 }
             };
-            timer.schedule(task, 0, 1);
+            timer.schedule(task, 0, 50);
 
         });
     }
