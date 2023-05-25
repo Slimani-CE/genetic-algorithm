@@ -10,7 +10,7 @@ public class Individual implements Comparable{
     private List<Character> genes = new ArrayList<>();
     // Fitness score
     private double fitness;
-    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/.,;:!?(){}<>@#$%^&*+-=0123456789,_`~|<>&";
+    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     public Individual(int chromosomeLength){
         for(int i = 0; i < chromosomeLength; i++){
             // Initialize genes with random values

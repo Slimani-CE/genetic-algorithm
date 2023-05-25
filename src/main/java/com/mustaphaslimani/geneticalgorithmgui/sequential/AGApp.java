@@ -3,7 +3,7 @@ package com.mustaphaslimani.geneticalgorithmgui.sequential;
 public class AGApp {
     private static final int MAX_GENERATIONS = 5000;
     private static final int POPULATION_SIZE = 100;
-    private static final String TARGET = "Mustapha SLIMANI. Is one of the best developers in the world";
+    private static final String TARGET = "Mustapha SLIMANI";
     public static void main(String[] args) {
         // Create an initial population
         Population population = new Population(POPULATION_SIZE, TARGET);

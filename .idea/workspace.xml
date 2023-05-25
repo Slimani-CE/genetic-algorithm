@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Update README.md">
+    <list default="true" id="85c370cb-992c-4518-97f9-8889edcebb11" name="Changes" comment="Fix javafx display bug">
+      <change afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/AgentFitness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/MainAgentGA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/MainContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/SimpleContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sequential/AGApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sequential/AGApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sequential/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sequential/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/GAPopulationAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/IndividualAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mustaphaslimani/geneticalgorithmgui/sma/IndividualAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/mustaphaslimani/geneticalgorithmgui/views/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mustaphaslimani/geneticalgorithmgui/views/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/genetic-algorithm&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.39425287&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/itsmu/Desktop/cours/MST SDIA/S2/Systèmes Multi Agents et Intelligence Artificielle Distribuée/Projects/genetic-algorithm-gui",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39425287",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mustaphaslimani.geneticalgorithmgui.sma" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\genetic-algorithm-gui" />
+      <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\genetic-algorithm-gui\src\main\java\com\mustaphaslimani\geneticalgorithmgui" />
       <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\genetic-algorithm-gui\assets" />
       <recent name="C:\Users\itsmu\Desktop\cours\MST SDIA\S2\Systèmes Multi Agents et Intelligence Artificielle Distribuée\Projects\Genetic_Algorithm" />
     </key>
@@ -93,12 +111,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDemoGA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.sma.demo.SimpleDemoGA" />
+    <configuration name="MainContainer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mustaphaslimani.geneticalgorithmgui.sma.MainContainer" />
       <module name="Genetic_Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ma.enset.sma.demo.*" />
+          <option name="PATTERN" value="com.mustaphaslimani.geneticalgorithmgui.sma.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleContainer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mustaphaslimani.geneticalgorithmgui.sma.SimpleContainer" />
+      <module name="Genetic_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mustaphaslimani.geneticalgorithmgui.sma.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,9 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.SimpleContainer" />
+        <item itemvalue="Application.MainContainer" />
         <item itemvalue="Application.AGApp" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.SimpleDemoGA" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +177,7 @@
       <workItem from="1684285453795" duration="208000" />
       <workItem from="1684333251601" duration="205000" />
       <workItem from="1684936446811" duration="1561000" />
-      <workItem from="1685007054625" duration="1055000" />
+      <workItem from="1685007054625" duration="15597000" />
     </task>
     <task id="LOCAL-00001" summary="Create selection method to sort individuals by their fitness">
       <created>1683741420340</created>
@@ -266,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684332712526</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix javafx display bug">
+      <created>1685008159469</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685008159469</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +323,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create selection method to sort individuals by their fitness" />
     <MESSAGE value="Create crossover method" />
     <MESSAGE value="Update crossover method" />
@@ -296,6 +336,7 @@
     <MESSAGE value="Update the insertionMutation method" />
     <MESSAGE value="Fix calculateFitness bug" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="Fix javafx display bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix javafx display bug" />
   </component>
 </project>

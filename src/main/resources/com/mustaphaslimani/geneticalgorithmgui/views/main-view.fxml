@@ -15,7 +15,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mustaphaslimani.geneticalgorithmgui.MainController">
    <center>
-      <TextField fx:id="solutonTextField" alignment="CENTER" editable="false" prefHeight="63.0" prefWidth="600.0" promptText="Solution" BorderPane.alignment="CENTER">
+      <TextField fx:id="solutonTextField" alignment="CENTER" editable="false" focusTraversable="false" prefHeight="63.0" prefWidth="600.0" promptText="Solution" BorderPane.alignment="CENTER">
          <font>
             <Font size="25.0" />
          </font></TextField>
@@ -80,11 +80,6 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="testButton" mnemonicParsing="false" text="Test button">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </Button>
                </children>
                <HBox.margin>
                   <Insets left="20.0" right="20.0" top="20.0" />
@@ -97,6 +92,11 @@
       <VBox alignment="BASELINE_CENTER" prefHeight="113.0" prefWidth="624.0" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="msgField" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="msgDetails" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
